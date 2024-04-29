@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <img class="logo" src="./images/logo.png" alt="Logo">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar3-event-fill me-1"></i>
+                            Espaço
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-person-lines-fill me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="container">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide1.png" alt="Espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide2.jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide3.jpg" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+                <div class="pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/sobre-restaurante.jpg" class="d-block w-100 rounded" alt="Espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                Na Cooldown, unimos o melhor de dois mundos: o emocionante universo dos e-sports e a deliciosa experiência de saborear hambúrgueres e outras delícias gastronômicas. Desde 2017, estamos comprometidos em oferecer um ambiente vibrante e acolhedor para a comunidade de jogadores e entusiastas de e-sports.
+                            </p>
+                            <p>
+                                Nossos restaurantes são projetados para proporcionar uma experiência imersiva no mundo dos e-sports. Dos telões transmitindo os campeonatos mais emocionantes às nossas decorações temáticas, cada detalhe foi cuidadosamente pensado para criar o ambiente perfeito para os fãs de jogos.
+                            </p>
+                            <h3 class="section-title">O que nos faz <span class="text-colored">únicos</span></h3>
+                            <ul>
+                                <li>Ambiente Temático</li>
+                                <li>Transmissões Ao Vivo</li>
+                                <li>Espaço para Jogos</li>
+                                <li>Cardápio Variado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Um espaço <span class="text-colored">incrivel</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/comida.jpg" class="d-block w-100 rounded mb-2" alt="Bolos de aniversário">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-cup-straw"></i>
+                            Comidas inspiradas em jogos
+                        </h3>
+                        <p>
+                            Dos hambúrgueres artesanais aos petiscos saborosos e sobremesas irresistíveis, nosso cardápio oferece uma variedade de opções para satisfazer todos os gostos.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/jogos.jpg" class="d-block w-100 rounded mb-2" alt="Bolos de aniversário">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-controller"></i>
+                            Espaço para jogos
+                        </h3>
+                        <p>
+                            Quer jogar? Temos estações de videogame para que você possa se divertir com seus amigos enquanto desfruta de uma refeição deliciosa.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/streams.jpg" class="d-block w-100 rounded mb-2" alt="Bolos de aniversário">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-cast"></i>
+                            Transmissões de jogos ao vivo
+                        </h3>
+                        <p>
+                            Não perca nenhum lance! Transmitimos ao vivo os principais campeonatos de e-sports para que você possa torcer pelo seu time favorito enquanto saboreia nossos deliciosos hambúrgueres.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#potions" class="fw-bold text-start nav-link text-colored active">Potions</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#shots" class="fw-bold text-start nav-link text-colored">Shots</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#milkshakes" class="fw-bold text-start nav-link text-colored">Milkshakes</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#porcoes" class="fw-bold text-start nav-link text-colored">Porções</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#burgers" class="fw-bold text-start nav-link text-colored">Hamburguers</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="potions">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/sleep-potion.jpg" alt="Sleep Potion">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Sleep Potion</h5>
+                                        <p>
+                                            Steinhaeger, suco de maracujá, limão, xarope de morango e Red Bull.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/master-potion.jpg" alt="Master Potion">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Master Potion</h5>
+                                        <p>
+                                            Vodka, suco de morango, grenadine, blue curaçau, guaraná com açai, infusão fresh, limão e Red Bull.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/poison-potion.jpg" alt="Poison Potion">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Poison Potion</h5>
+                                        <p>
+                                            Gin, limão, xarope de maçã verde e Red Bull.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="shots">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/leroy.jpg" alt="Leroy Jenkis">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Leroy Jenkis</h5>
+                                        <p>
+                                            Shot aleatório. Ousado, como o verdadeiro Leeroy.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/ryuu-ga.jpg" alt="Ryuu Go Waga Teki Wo Kurau">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Ryuu Go Waga Teki Wo Kurau</h5>
+                                        <p>
+                                            Saqué, xarope de blue curaçau e Red Bull.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/ryujin.jpg" alt="Ryujin No Ken Wa Kurde">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Ryujin No Ken Wa Kurde</h5>
+                                        <p>
+                                            Saqué, xarope de maçă verde e Red Bull.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/elemental.jpg" alt="Elementol Drakes">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Elementol Drakes</h5>
+                                        <p>
+                                            Vodka, cachaça, licor de pêssego, licor de menta e xarope de blue curaçau.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/skull.jpg" alt="Skull Bosher">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Skull Bosher</h5>
+                                        <p>
+                                            Tequila, xarope de hibisco e suco de abacaxi.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/bebidas/molotov.jpg" alt="Molotov">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Molotov</h5>
+                                        <p>
+                                            Brandy, cachaça e xarope de amaretto. Servido quente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="milkshakes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-50" src="images/cardapio/bebidas/ymir.jpg" alt="Cerveja">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Ymir Radioactive</h5>
+                                        <p>
+                                            Sorvete de creme, leite e xarope de menta.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-50" src="images/cardapio/bebidas/sleep.jpg" alt="Vinho">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Sleep Dart</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-50" src="images/cardapio/bebidas/earthshaker.jpg" alt="Vinho">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Earthshaker</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="porcoes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-100" src="images/cardapio/porcoes/batata-frita.jpg" alt="Fried Minions">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Fried Minions</h5>
+                                        <p>
+                                            Porção de batatas fritas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-75" src="images/cardapio/porcoes/onion-rings.jpg" alt="Nezhos' Onions Rings">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Nezhos' Onions Rings</h5>
+                                        <p>
+                                            Anéis de cebola empanados acompanhados de molho barbecue.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-100" src="images/cardapio/porcoes/mandioca-frita.jpg" alt="Creeps">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Creeps</h5>
+                                        <p>
+                                            Porção de mandiocas fritas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="burgers">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-100" src="images/cardapio/burguer/roshan.jpg" alt="Roshan Burger">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Roshan Burger</h5>
+                                        <p>
+                                            2 hambúrgueres 150g, queijos cheddar e provolone, chips de queijo, confit de alho e pimenta rosa.
+                                        </p>
+                                        <p>
+                                            "Um monstro poderoso, com uma crosta de queijo e maionese levemente picante, perfeito com o drink Aegis."
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-100" src="images/cardapio/burguer/baron.jpg" alt="Baron Burguer">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Baron Burguer</h5>
+                                        <p>
+                                            2 hambúrgueres 150g, queijo cheddar, picles, tomate e nosso molho de alcaparras.
+                                        </p>
+                                        <p>
+                                            "Valoroso oponente com sua baba acida de picles e seus olhos de alcaparras, Derrote esse Inimigo e aproveite o Buff nos Minions."
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="w-100" src="images/cardapio/burguer/fire-giant.jpg" alt="Fire Giant Burger">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Fire Giant Burger</h5>
+                                        <p>
+                                            2 hambúrgueres 150g, queijo cheddar, cebola roxa, pimentas jalapeño e dedo de moça e molho buffalo.
+                                        </p>
+                                        <p>
+                                            "Um gigante de fogo com muita, mas muita pimenta, Derrotá-lo garantirá o buff do Tower Drink"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="text" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored"><i class="bi bi-hand-thumbs-up-fill"></i> Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored"><i class="bi bi-cursor-fill"></i> Endereço</h3>
+                            <p>
+                                Av. Silva Jardim, 1145 - Rebouças, Curitiba - PR, 80230-000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
